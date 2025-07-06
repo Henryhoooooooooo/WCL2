@@ -47,10 +47,23 @@
     <header>
         <h1>虛擬展廳 Virtual Exhibition</h1>
     </header>
+
     <nav>
         <a href="#">首頁</a>
         <a href="#">關於</a>
         <a href="#">聯絡</a>
+        {% if user.is_authenticated %}
+            <span style="margin-left:2rem; color:#3a7afe;">{{ user.username }}</span>
+            <a href="/accounts/logout/">登出</a>
+        {% else %}
+            <form method="post" action="/accounts/login/" style="display:inline-block; float:right; margin-left:2rem;">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="帳號" style="padding:0.3rem 0.7rem; border-radius:4px; border:none; background:#292929; color:#fff; width:100px;">
+                <input type="password" name="password" placeholder="密碼" style="padding:0.3rem 0.7rem; border-radius:4px; border:none; background:#292929; color:#fff; width:100px;">
+                <input type="submit" value="登入" style="padding:0.3rem 1.2rem; background:#3a7afe; color:#fff; border:none; border-radius:4px; cursor:pointer;">
+                <a href="/register/" style="color:#3a7afe; margin-left:0.5rem;">註冊</a>
+            </form>
+        {% endif %}
     </nav>
     <div class="unity-container">
         <!-- 將下方 src 替換為你的 Unity WebGL Build 路徑 -->

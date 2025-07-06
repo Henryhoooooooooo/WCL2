@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用戶登入</title>
+    <style>
+        body {
+            background: #181818;
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #232323;
+            padding: 2rem 2.5rem 2rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+            min-width: 320px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #bbb;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.2rem;
+            border: none;
+            border-radius: 6px;
+            background: #292929;
+            color: #fff;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 0.7rem;
+            background: #3a7afe;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        input[type="submit"]:hover {
+            background: #1558b0;
+        }
+        .errorlist {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+        .helptext {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" class="login-container">
+        {% csrf_token %}
+        <h2>用戶登入</h2>
+        {% if form.errors %}
+            <ul class="errorlist">
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <li>{{ error|escape }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <label for="id_username">帳號</label>
+        <input type="text" name="username" autofocus required id="id_username" placeholder="請輸入帳號">
+        <label for="id_password">密碼</label>
+        <input type="password" name="password" required id="id_password" placeholder="請輸入密碼">
+        <input type="submit" value="登入">
+        <div class="helptext">預設管理員可用 <a href="/admin/" style="color:#3a7afe;">後台</a> 登入</div>
+    </form>
+</body>
+</html>

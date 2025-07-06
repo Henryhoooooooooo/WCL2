@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCL2 Virtual Exhibition</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #232526 0%, #414345 100%);
+            color: #fff;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(34,34,34,0.95);
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        }
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #b0b8c1;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .center-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
+        .enter-btn {
+            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
+            color: #fff;
+            border: none;
+            border-radius: 32px;
+            padding: 1rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 4px 24px rgba(58,122,254,0.15);
+            margin-top: 2rem;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .enter-btn:hover {
+            background: linear-gradient(90deg, #1558b0 30%, #00bfae 100%);
+            box-shadow: 0 8px 32px rgba(58,122,254,0.25);
+        }
+        .login-box {
+            position: absolute;
+            top: 2rem;
+            right: 2.5rem;
+            background: rgba(34,34,34,0.95);
+            border-radius: 12px;
+            padding: 1.2rem 2rem 1.2rem 2rem;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+            min-width: 260px;
+        }
+        .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 6px;
+            background: #292929;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 0.6rem;
+            background: #3a7afe;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .login-box input[type="submit"]:hover {
+            background: #1558b0;
+        }
+        .login-box .helptext {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .login-box .errorlist {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+        @media (max-width: 600px) {
+            .login-box { position: static; min-width: unset; width: 90vw; margin: 0 auto 2rem auto; }
+            .center-box { min-height: 40vh; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">WCL2</div>
+        <div class="subtitle">Virtual Exhibition</div>
+    </header>
+    {% if not user.is_authenticated %}
+    <div class="login-box">
+        <form method="post" action="/accounts/login/">
+            {% csrf_token %}
+            <h3 style="text-align:center; font-weight:500; margin-bottom:1.2rem;">Sign In</h3>
+            {% if form.errors %}
+                <ul class="errorlist">
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <div class="helptext">No account? <a href="/register/" style="color:#3a7afe;">Sign up</a></div>
+            <div class="helptext"><a href="/accounts/password_reset/" style="color:#3a7afe;">Forgot password?</a></div>
+        </form>
+    </div>
+    {% endif %}
+    <div class="center-box">
+        <h2 style="font-weight:400; color:#b0b8c1;">Welcome to the WCL2 Virtual Exhibition</h2>
+        <form method="get" action="/showroom/">
+            <button class="enter-btn" type="submit">Enter Exhibition</button>
+        </form>
+    </div>
+</body>
+</html>
