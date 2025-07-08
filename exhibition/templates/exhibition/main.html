@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WCL2 Virtual Exhibition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Unbounded:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(120deg, #232526 0%, #414345 100%);
+            background: linear-gradient(120deg, #18122B 0%, #393053 100%);
             color: #fff;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            font-family: 'Unbounded', 'Montserrat', 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
             min-height: 100vh;
+            letter-spacing: 0.5px;
         }
         header {
-            background: rgba(34,34,34,0.95);
-            padding: 2rem 0 1rem 0;
+            background: rgba(24,18,43,0.98);
+            padding: 2.5rem 0 1.5rem 0;
             text-align: center;
-            letter-spacing: 2px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            letter-spacing: 3px;
+            box-shadow: 0 4px 32px rgba(57,48,83,0.18);
         }
         .title {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
+            font-family: 'Unbounded', 'Montserrat', sans-serif;
             font-weight: 700;
-            letter-spacing: 4px;
-            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
+            letter-spacing: 6px;
+            background: linear-gradient(90deg, #FF6B6B 10%, #3a7afe 60%, #00e6d0 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-shadow: 0 2px 24px rgba(58,122,254,0.10);
         }
         .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 400;
-            color: #b0b8c1;
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
+            color: #e0e0e0;
+            margin-top: 0.7rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
         }
         .center-box {
             display: flex;
@@ -44,60 +49,64 @@
             min-height: 60vh;
         }
         .enter-btn {
-            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
+            background: linear-gradient(90deg, #FF6B6B 10%, #3a7afe 60%, #00e6d0 100%);
             color: #fff;
             border: none;
-            border-radius: 32px;
-            padding: 1rem 3rem;
-            font-size: 1.3rem;
-            font-weight: 600;
-            letter-spacing: 2px;
+            border-radius: 40px;
+            padding: 1.2rem 4rem;
+            font-size: 1.5rem;
+            font-family: 'Unbounded', 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 3px;
             cursor: pointer;
-            box-shadow: 0 4px 24px rgba(58,122,254,0.15);
-            margin-top: 2rem;
-            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 6px 32px rgba(255,107,107,0.10), 0 2px 24px rgba(58,122,254,0.10);
+            margin-top: 2.5rem;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
         }
         .enter-btn:hover {
-            background: linear-gradient(90deg, #1558b0 30%, #00bfae 100%);
-            box-shadow: 0 8px 32px rgba(58,122,254,0.25);
+            background: linear-gradient(90deg, #3a7afe 10%, #FF6B6B 60%, #00e6d0 100%);
+            box-shadow: 0 12px 48px rgba(58,122,254,0.18);
+            transform: translateY(-2px) scale(1.03);
         }
         .login-box {
             position: absolute;
             top: 2rem;
             right: 2.5rem;
-            background: rgba(34,34,34,0.95);
-            border-radius: 12px;
-            padding: 1.2rem 2rem 1.2rem 2rem;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-            min-width: 260px;
+            background: rgba(34,34,34,0.98);
+            border-radius: 16px;
+            padding: 1.5rem 2.2rem 1.5rem 2.2rem;
+            box-shadow: 0 4px 32px rgba(57,48,83,0.18);
+            min-width: 270px;
         }
         .login-box input[type="text"], .login-box input[type="password"] {
             width: 100%;
-            padding: 0.6rem;
-            margin-bottom: 1rem;
+            padding: 0.7rem;
+            margin-bottom: 1.1rem;
             border: none;
-            border-radius: 6px;
-            background: #292929;
+            border-radius: 8px;
+            background: #232232;
             color: #fff;
-            font-size: 1rem;
+            font-size: 1.08rem;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
         }
         .login-box input[type="submit"] {
             width: 100%;
-            padding: 0.6rem;
-            background: #3a7afe;
+            padding: 0.7rem;
+            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
             color: #fff;
             border: none;
-            border-radius: 6px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 1.08rem;
+            font-weight: 600;
             cursor: pointer;
             transition: background 0.2s;
         }
         .login-box input[type="submit"]:hover {
-            background: #1558b0;
+            background: linear-gradient(90deg, #FF6B6B 30%, #3a7afe 100%);
         }
         .login-box .helptext {
-            color: #888;
-            font-size: 0.95rem;
+            color: #b0b8c1;
+            font-size: 1rem;
             margin-bottom: 1rem;
         }
         .login-box .errorlist {
@@ -107,8 +116,10 @@
             padding: 0;
         }
         @media (max-width: 600px) {
-            .login-box { position: static; min-width: unset; width: 90vw; margin: 0 auto 2rem auto; }
+            .login-box { position: static; min-width: unset; width: 92vw; margin: 0 auto 2rem auto; }
             .center-box { min-height: 40vh; }
+            .enter-btn { font-size: 1.1rem; padding: 0.8rem 1.5rem; }
+            .title { font-size: 2rem; }
         }
     </style>
 </head>
@@ -117,36 +128,106 @@
         <div class="title">WCL2</div>
         <div class="subtitle">Virtual Exhibition</div>
     </header>
-    {% if not user.is_authenticated %}
-    <div class="login-box">
-        <form method="post" action="/accounts/login/">
-            {% csrf_token %}
-            <h3 style="text-align:center; font-weight:500; margin-bottom:1.2rem;">Sign In</h3>
-            {% if form.errors %}
-                <ul class="errorlist">
-                    {% for field in form %}
-                        {% for error in field.errors %}
-                            <li>{{ error|escape }}</li>
-                        {% endfor %}
-                    {% endfor %}
-                    {% for error in form.non_field_errors %}
-                        <li>{{ error|escape }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-            <div class="helptext">No account? <a href="/register/" style="color:#3a7afe;">Sign up</a></div>
-            <div class="helptext"><a href="/accounts/password_reset/" style="color:#3a7afe;">Forgot password?</a></div>
-        </form>
+    <div id="loginModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="login-box" style="position:static; box-shadow:none; background:transparent; padding:0; min-width:unset;">
+                <form method="post" action="/accounts/login/" id="loginForm">
+                    {% csrf_token %}
+                    <h3 style="text-align:center; font-weight:500; margin-bottom:1.2rem;">Sign In</h3>
+                    {% if form.errors %}
+                        <ul class="errorlist">
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    <li>{{ error|escape }}</li>
+                                {% endfor %}
+                            {% endfor %}
+                            {% for error in form.non_field_errors %}
+                                <li>{{ error|escape }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="submit" value="Login">
+                    <div class="helptext">No account? <a href="/register/" style="color:#3a7afe;">Sign up</a></div>
+                    <div class="helptext"><a href="/accounts/password_reset/" style="color:#3a7afe;">Forgot password?</a></div>
+                </form>
+            </div>
+        </div>
     </div>
-    {% endif %}
     <div class="center-box">
         <h2 style="font-weight:400; color:#b0b8c1;">Welcome to the WCL2 Virtual Exhibition</h2>
-        <form method="get" action="/showroom/">
-            <button class="enter-btn" type="submit">Enter Exhibition</button>
-        </form>
+        <button class="enter-btn" id="enterBtn" type="button">Enter Exhibition</button>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('loginModal');
+            var btn = document.getElementById('enterBtn');
+            var span = document.getElementById('closeModal');
+            var isAuthenticated = "{{ user.is_authenticated|yesno:'true,false' }}";
+            btn.onclick = function() {
+                if (isAuthenticated === 'true') {
+                    window.location.href = '/showroom/';
+                } else {
+                    modal.style.display = 'block';
+                }
+            }
+            span.onclick = function() {
+                modal.style.display = 'none';
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </body>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background: rgba(0,0,0,0.55);
+        backdrop-filter: blur(2px);
+        transition: all 0.2s;
+    }
+    .modal-content {
+        background: #232526;
+        margin: 7% auto;
+        border-radius: 16px;
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+        border: 1px solid #333;
+        width: 100%;
+        max-width: 370px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        position: relative;
+        animation: fadeIn 0.3s;
+    }
+    .close {
+        color: #aaa;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .close:hover, .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 </html>

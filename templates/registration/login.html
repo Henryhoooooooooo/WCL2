@@ -4,57 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用戶登入</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Unbounded:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: #181818;
+            background: linear-gradient(120deg, #18122B 0%, #393053 100%);
             color: #fff;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Unbounded', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            letter-spacing: 0.5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
         }
         .login-container {
-            background: #232323;
-            padding: 2rem 2.5rem 2rem 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+            background: rgba(34,34,34,0.98);
+            padding: 2.2rem 2.7rem 2.2rem 2.7rem;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(57,48,83,0.18);
             min-width: 320px;
+            max-width: 95vw;
         }
         h2 {
             text-align: center;
-            margin-bottom: 1.5rem;
-            font-weight: 400;
+            margin-bottom: 1.7rem;
+            font-weight: 700;
+            font-family: 'Unbounded', 'Montserrat', sans-serif;
+            font-size: 2.1rem;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #FF6B6B 10%, #3a7afe 60%, #00e6d0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #bbb;
+            color: #b0b8c1;
+            font-size: 1.08rem;
         }
         input[type="text"], input[type="password"] {
             width: 100%;
-            padding: 0.7rem;
+            padding: 0.8rem;
             margin-bottom: 1.2rem;
             border: none;
-            border-radius: 6px;
-            background: #292929;
+            border-radius: 8px;
+            background: #232232;
             color: #fff;
-            font-size: 1rem;
+            font-size: 1.08rem;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
         }
         input[type="submit"] {
             width: 100%;
-            padding: 0.7rem;
-            background: #3a7afe;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #3a7afe 30%, #00e6d0 100%);
             color: #fff;
             border: none;
-            border-radius: 6px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 1.08rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+            box-shadow: 0 2px 12px rgba(58,122,254,0.10);
         }
         input[type="submit"]:hover {
-            background: #1558b0;
+            background: linear-gradient(90deg, #FF6B6B 30%, #3a7afe 100%);
+            transform: translateY(-2px) scale(1.03);
         }
         .errorlist {
             color: #ff6b6b;
@@ -63,9 +79,13 @@
             padding: 0;
         }
         .helptext {
-            color: #888;
-            font-size: 0.95rem;
+            color: #b0b8c1;
+            font-size: 1rem;
             margin-bottom: 1rem;
+        }
+        @media (max-width: 600px) {
+            .login-container { padding: 1.2rem 0.5rem; min-width: unset; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>

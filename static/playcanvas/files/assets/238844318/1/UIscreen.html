@@ -1,0 +1,2274 @@
+<div id="asset-item" class="hidden flex-col p-3 rounded-md bg-stone-700 hover:bg-[#dcdada] hover:text-black space-y-1">
+  <img
+    class="object-contain w-[140px] h-[120px] pointer-events-none"
+    loading="lazy"
+    src="https://zord-storage-bucket.s3.amazonaws.com/odyssey/3dModels/1711610034467-baloon.jpg"
+    alt="Baloon"
+  />
+  <div class="flex-col justify-center items-center">
+    <p class="text-center font-semibold">Baloon.glb</p>
+    <p class="text-center text-[12px] font-thin">Size : 3.3MB</p>
+  </div>
+</div>
+
+<div id="frame-item"
+  class="hidden w-full bg-[#707070] text-white bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+  <div class="font-medium pointer-events-none text-[12px] sm:text-base">
+    Frame Name here
+  </div>
+  <div class="icon-container">
+    <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+      <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+        <path fill="black" id="Path_131" data-name="Path 131"
+          d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z"
+          transform="translate(0 0)" fill="#fff" />
+        <path fill="black" id="Path_132" data-name="Path 132"
+          d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z"
+          transform="translate(-0.964 -0.598)" fill="#fff" />
+      </g>
+    </svg>
+    <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116"
+      viewBox="0 0 20.703 16.116">
+      <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+        <path fill="black" id="Path_131" data-name="Path 131"
+          d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z"
+          transform="translate(0 0)" fill="#fff" />
+        <path fill="black" id="Path_132" data-name="Path 132"
+          d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z"
+          transform="translate(-0.964 -0.598)" fill="#fff" />
+        <line fill="black" x1="20" y1="2" x2="0" y2="18" stroke="black" stroke-width="2" />
+      </g>
+    </svg>
+  </div>
+</div>
+
+<div id="tutorial-video-modal"
+  class="hidden w-1/2 h-auto reletive p-4 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 cursor-pointer">
+  <button
+    id="tutorial-video-close"
+    class="absolute top-[-5px] right-[-5px] rounded-full bg-white text-black w-7 h-7 text-sm font-bold flex items-center justify-center text-center"
+  >
+    X
+  </button>
+  <div class="flex justify-between items-center mx-2">
+    <div class="font-semibold text-lg">Initial Guide Video</div>
+  </div>
+  <div class="mx-2">
+    <!-- https://d2btao7ncfyde3.cloudfront.net/Assets/Odyssey3d-Tutorial.mp4 -->
+    <video src="" class="border rounded-xl w-full h-full object-cover" controls="true"></video>
+  </div>
+  <!-- <p class=" text-start text-sm">This is how you can customize your store..</p> -->
+  <button
+    id="tutorial-video-new-tab"
+    class="rounded-lg bg-blue-700 p-2 text-white text-sm font-bold flex items-center justify-center text-center mx-auto"
+  >
+    Open in new tab
+  </button>
+</div>
+
+<div id="toast"
+  class="hidden w-[90%] md:w-auto h-fit fixed bottom-6 md:top-6 left-1/2 transform -translate-x-1/2 bg-[#2b2b2a] text-white px-6 py-3 rounded-md shadow-lg z-50 animate-pulse">
+  Hello, this is a toast!
+</div>
+<div id="toast1"
+  class="hidden w-[90%] md:w-auto h-fit fixed bottom-6 md:top-6 left-1/2 transform -translate-x-1/2 bg-[#2b2b2a] text-white px-6 py-3 rounded-md shadow-lg z-50 animate-pulse">
+  Hello, this is a toast!
+</div>
+<!-- Product Card -->
+<div id="product-card"
+  class="hidden cursor-auto landscape:max-lg:flex-row h-fit w-[90%] lg:w-full p-6 landscape:max-lg:p-4 max-w-md lg:max-w-sm bg-white/50 border-2 mx-2 lg:mx-0 border-white rounded-3xl shadow relative flex flex-col z-[150] select-none">
+  <button
+    id="close-btn"
+    class="rounded-full w-8 h-8 absolute -right-2 -top-2 text-lg font-semibold bg-white flex items-center text-center justify-center z-20"
+  >
+    x
+  </button>
+  <div class="bg-white rounded-3xl cursor-pointer flex justify-center items-center h-fit m-auto">
+    <img
+      id="product-img"
+      class="bg-opacity-50 object-contain landscape:max-lg:max-h-[180px] max-h-[334px] max-w-[100%] rounded-2xl cursor-auto"
+      src="https://cdn.shopify.com/s/files/1/0756/7002/8572/products/Easy-Going_1.png?v=1683804525"
+      alt="product image"
+      style="-webkit-user-drag: none"
+    />
+  </div>
+
+  <div id="product-info" class="pt-5 landscape:max-lg:pl-5 lg:pt-5 h-fit">
+    <div id="product-name-row" class="flex flex-col justify-between">
+      <div id="product-name" class="text-xl font-semibold tracking-tight text-gray-900">
+        Elegance Ease
+      </div>
+      <div id="product-type" class="hidden text-base opacity-60 font-semibold tracking-tight text-gray-900">
+        Loafer
+      </div>
+    </div>
+    <div id="product-price-row"
+      class="flex flex-col gap-2 items-center flex-wrap landscape:max-lg:flex-col landscape:max-lg:gap-2 landscape:max-lg:items-center">
+      <span
+        id="product-price"
+        class="hidden text-xl font-bold text-gray-900 landscape:max-lg:mr-auto"
+        >$ 599</span>
+      <a style="-webkit-user-drag: none" id="product-page-link" href="#" target="_blank"
+        class="text-white border-solid border-2 border-blue-700 hover:border-blue-800 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-full text-sm px-8 lg:px-10 py-2.5 text-center landscape:max-lg:w-full">Go
+        to product</a>
+      <a style="-webkit-user-drag: none" id="product-page-link-2" href="#" target="_blank"
+        class="text-blue-700 border-solid border-2 border-blue-700 hover:border-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-full text-sm px-8 lg:px-10 py-2.5 text-center landscape:max-lg:w-full">Go
+        to product</a>
+    </div>
+  </div>
+</div>
+
+<!-- custom product for planes -->
+<div id="custom-product-card"
+  class="hidden landscape:max-lg:flex-row h-fit w-[90%] lg:w-full p-6 landscape:max-lg:p-4 max-w-sm bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl mx-2 lg:mx-0 rounded-3xl shadow relative flex flex-col select-none z-50">
+  <button
+    id="custom-product-menu-close"
+    class="rounded-full w-8 h-8 absolute -right-2 -top-2 text-lg font-semibold bg-white flex items-center text-center justify-center z-20"
+  >
+    x
+  </button>
+  <div id="custom-product-menu" class="flex-col landscape:max-lg:flex-row gap-3 h-full w-full py-5 px-5 text-white">
+    <div class="flex flex-col gap-3 flex-1">
+      <div class="flex justify-between items-center font-semibold text-[12px] sm:text-base lg:text-lg">
+        <div class="flex items-center gap-2">
+          <span>Upload Image *</span>
+        </div>
+      </div>
+
+      <div class="file-uploader relative">
+        <input type="file" id="product-image-input" class="hidden" />
+        <label
+          id="label-input"
+          for="product-image-input"
+          class="flex w-full justify-center items-center bg-[#44444491] hover:bg-[#6e6e6e91] px-4 py-2 sm:py-3 rounded-xl border border-white/30 cursor-pointer"
+        >
+          <div
+            id="product-image-name"
+            class="hidden w-full h-[95px] flex justify-center items-center text-[14px]"
+          >
+            Name here
+          </div>
+          <div
+            id="choose-file-modal"
+            class="flex flex-col justify-center items-center gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70.903"
+              height="49.632"
+              viewBox="0 0 70.903 49.632"
+            >
+              <path
+                id="cloud-arrow-up-solid"
+                d="M15.953,81.632a15.957,15.957,0,0,1-5.3-31.009c-.011-.3-.022-.6-.022-.9a17.727,17.727,0,0,1,33.092-8.841,10.63,10.63,0,0,1,16.54,8.841,10.754,10.754,0,0,1-.709,3.833,14.18,14.18,0,0,1-2.836,28.073Zm8.752-24.041a2.656,2.656,0,1,0,3.756,3.756l4.321-4.321V71.883a2.659,2.659,0,1,0,5.318,0V57.027l4.321,4.321a2.656,2.656,0,0,0,3.756-3.756l-8.863-8.863a2.648,2.648,0,0,0-3.756,0l-8.863,8.863Z"
+                transform="translate(0 -32)"
+                fill="#c9c9c9"
+              />
+            </svg>
+            <div class="text-[12px] sm:text-[14px] font-normal">
+              Choose File
+            </div>
+            <div class="text-[10px] sm:text-[12px] text-[#7b7b7b]">
+              File Supported .png .jpg
+            </div>
+          </div>
+        </label>
+        <div
+          class="hidden w-full justify-center items-center bg-[#44444491] h-[116px] hover:bg-[#6e6e6e91] px-4 py-2 sm:py-3 rounded-xl border border-white/30 cursor-pointer">
+          <div id="uploading-file-modal" class="flex flex-row items-center justify-center gap-2 animate-pulse">
+            <img
+              src="https://dwffbzjamvzk3.cloudfront.net/images/spinner.png"
+              alt=""
+              class="animate-spin w-4 sm:w-6 h-4 sm:h-6"
+            />
+            <div class="text-[12px] sm:text-base font-normal">
+              Uploading Product Image...
+            </div>
+          </div>
+        </div>
+        <!-- reset product image -->
+        <div id="product-image-reset"
+          class="hidden absolute top-0 left-0 opacity-0 cursor-pointer w-full h-full rounded-lg hover:opacity-100 bg-black/60 flex items-center justify-center">
+          <button id="product-image-reset-button" class="text-white">
+            Reset Image
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-between items-center font-semibold text-[12px] sm:text-base lg:text-lg">
+        <div class="flex items-center gap-2">
+          <span>Title *</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <input
+          id="custom-product-name"
+          placeholder="Write title here"
+          class="w-full bg-transparent border border-white/30 rounded-xl text-sm p-3 outline-none ring-0 active:outline-none active:ring-0 select-none"
+        />
+      </div>
+
+      <div class="flex justify-between items-center font-semibold text-[12px] sm:text-base lg:text-lg">
+        <div class="flex items-center gap-2">
+          <span>URL *</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <input
+          id="custom-product-url"
+          placeholder="Add product / collection URL"
+          class="w-full bg-transparent border border-white/30 rounded-xl text-sm p-3 outline-none ring-0 active:outline-none active:ring-0 select-none"
+        />
+      </div>
+
+      <div class="flex justify-between items-center font-semibold text-[12px] sm:text-base lg:text-lg">
+        <div class="flex items-center gap-2">
+          <span>Secondary URL</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <input
+          id="custom-product-url-2"
+          placeholder="Add secondary URL"
+          class="w-full bg-transparent border border-white/30 rounded-xl text-sm p-3 outline-none ring-0 active:outline-none active:ring-0 select-none"
+        />
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-3 gap-2">
+      <button
+        id="custom-product-remove"
+        class="bg-[#777777] px-4 py-2 rounded-xl text-[10px] sm:text-[14px] mt-2"
+      >
+        Remove
+      </button>
+      <button
+        id="custom-product-update"
+        class="bg-[#777777] px-4 py-2 rounded-xl text-[10px] sm:text-[14px] mt-2"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- </div> -->
+
+<!-- New UI -->
+<div class="absolute flex items-center justify-center lg:justify-end w-full top-0 z-40">
+  <div title="Tutorial Video" id="tutorial-video-button"
+    class="absolute bg-[#2b2b2a] hidden sm:flex text-white left-0 top-[11px] md:top-[22px] ml-2 lg:ml-6 bg-opacity-60 backdrop-blur-xl rounded-full p-4 w-fit h-fit items-center justify-center hover:cursor-pointer">
+    <button class="flex gap-1">
+      <svg
+        height="20"
+        width="20"
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+      >
+        <path
+          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+        />
+      </svg>
+      <span class="hidden md:inline"> Tutorial Video </span>
+    </button>
+  </div>
+
+  <!-- 3D Model Store  -->
+  <div id="3d-model-assets"
+    class="hidden relative select-none mr-0 lg:mr-4 mt-[65px] md:mt-[100px] w-[90%] lg:w-[400px] h-fit rounded-2xl">
+    <div id="overlay"
+      class="hidden absolute bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl inset-0 z-50 hidden rounded-2xl flex items-center justify-center flex-row gap-2">
+      <div role="status">
+        <svg aria-hidden="true" class="w-6 h-6 text-white animate-spin fill-gray-600" viewBox="0 0 100 101" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="currentColor" />
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentFill" />
+        </svg>
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="text-white animate-pulse">Loading...</div>
+    </div>
+    <div
+      class="rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-2 py-6 flex flex-col gap-y-4 cursor-pointer">
+      <div class="flex-col justify-between items-center mx-2">
+        <div class="flex justify-start items-center mb-4 space-x-2">
+          <svg id="models-lib-back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 16">
+            <g id="Group_141" data-name="Group 141" transform="translate(-1 -4)">
+              <path id="Path_128" data-name="Path 128"
+                d="M22,11H4.414L9.707,5.707A1,1,0,1,0,8.293,4.293l-7,7a1,1,0,0,0,0,1.414l7,7a1,1,0,1,0,1.414-1.414L4.414,13H22a1,1,0,0,0,0-2Z"
+                fill="#fff" />
+            </g>
+          </svg>
+
+          <div class="font-semibold text-lg">3D Asset Store</div>
+        </div>
+
+        <div class="flex justify-between items-center w-full gap-2">
+          <input
+            id="model-assets-input"
+            placeholder="Search here.."
+            class="flex justify-start text-white w-full items-center h-8 p-2 mb-2 bg-stone-700 rounded-md"
+          />
+        </div>
+        <div class="flex items-center overflow-x-auto scrollbar mb-2">
+          <div id="tag-list" class="flex flex-row gap-2 mb-2">
+            <button
+              id="model-tag-item"
+              class="hidden min-w-[50px] py-1 px-2 bg-white text-black text-sm rounded-lg whitespace-nowrap"
+            >
+              tag name
+            </button>
+            <!-- <button
+            id="tag-furniture"
+            class="min-w-[50px] py-1 px-2 bg-stone-700 text-white text-sm rounded-lg whitespace-nowrap"
+          >
+            Furniture
+          </button>
+          <button
+            id="tag-electronics"
+            class="min-w-[50px] py-1 px-2 bg-stone-700 text-white text-sm rounded-lg whitespace-nowrap"
+          >
+            Electronics
+          </button> -->
+          </div>
+        </div>
+
+        <div id="asset-items-list"
+          class="flex flex-wrap gap-4 justify-center items-center overflow-y-auto scrollbar max-h-[400px]"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Existing Frames Screen -->
+  <div id="existing-frames-assets"
+    class="hidden relative select-none mr-0 lg:mr-4 mt-[65px] md:mt-[100px] w-[90%] lg:w-[400px] h-fit rounded-2xl">
+    <div id="overlay"
+      class="hidden absolute bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl inset-0 z-50 hidden rounded-2xl flex items-center justify-center flex-row gap-2">
+      <div role="status">
+        <svg aria-hidden="true" class="w-6 h-6 text-white animate-spin fill-gray-600" viewBox="0 0 100 101" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="currentColor" />
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentFill" />
+        </svg>
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="text-white animate-pulse">Loading...</div>
+    </div>
+    <div
+      class="rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-2 py-6 flex flex-col gap-y-4 cursor-pointer">
+      <div class="flex-col justify-between items-center mx-2">
+        <div class="flex justify-start items-center mb-4 space-x-2">
+          <svg id="existing-frames-back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 16">
+            <g id="Group_141" data-name="Group 141" transform="translate(-1 -4)">
+              <path id="Path_128" data-name="Path 128"
+                d="M22,11H4.414L9.707,5.707A1,1,0,1,0,8.293,4.293l-7,7a1,1,0,0,0,0,1.414l7,7a1,1,0,1,0,1.414-1.414L4.414,13H22a1,1,0,0,0,0-2Z"
+                fill="#fff" />
+            </g>
+          </svg>
+
+          <div id="existing-frames-id" class="font-semibold text-lg">
+            Existing Frames
+          </div>
+        </div>
+
+        <div id="frame-option-buttons" class="w-full bg-[#707070] h-[50px] rounded-xl flex flex-row mb-4">
+          <button
+              id="select-frame-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] bg-[#908e8d] text-[12px] sm:text-base"
+            >
+              Select Frame
+            </button>
+          <button
+              id="edit-frame-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] text-[12px] sm:text-base"
+            >
+              Edit Frame
+            </button>
+        </div>
+
+        <div id="existing-frame-input-div" class="flex justify-between items-center w-full gap-2">
+          <input
+            id="existing-frame-input"
+            placeholder="   Search here"
+            class="flex justify-start text-white w-full items-center h-8 p-2 mb-2 bg-[#707070] text-[11.5px] rounded-md placeholder-[#FFFFFF45]"
+            maxlength="18"
+          />
+        </div>
+
+        <div class="flex flex-col gap-4 flex-1">
+          <div id="select-edit-cards">
+            <div id="select-frame-list"
+              class="flex w-full h-full flex-col items-center justify-start gap-[10px] max-h-[220px] lg:max-h-[190px] pr-1">
+              <div id="all-frames"
+                class="flex w-full h-full overflow-y-auto scrollbar flex-col items-center justify-start gap-[10px] max-h-[220px] lg:max-h-[190px] pr-1">
+              </div>
+              <button
+                id="select-frame-update-btn"
+                class="bg-[#777777] px-8 py-2 rounded-xl text-[12px] sm:text-base mt-2"
+              >
+                Update
+              </button>
+              <!-- <div id="frame-item" class="w-full bg-[#707070] text-black bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+    <div class="font-medium pointer-events-none text-[12px] text-white sm:text-base">Frame Name here</div>
+    <div class="icon-container">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+        </g>
+      </svg>
+      <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+          <line x1="20" y1="2" x2="0" y2="18" stroke="#fff" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div id="frame-item" class="w-full bg-[#707070] text-black bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+    <div class="font-medium pointer-events-none text-[12px] text-white sm:text-base">Frame Name here</div>
+    <div class="icon-container">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+        </g>
+      </svg>
+      <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+          <line x1="20" y1="2" x2="0" y2="18" stroke="#fff" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+   <div id="frame-item" class="w-full bg-[#707070] text-black bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+    <div class="font-medium pointer-events-none text-[12px] text-white sm:text-base">Frame Name here</div>
+    <div class="icon-container">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+        </g>
+      </svg>
+      <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+          <line x1="20" y1="2" x2="0" y2="18" stroke="#fff" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div id="frame-item" class="w-full bg-[#707070] text-black bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+    <div class="font-medium pointer-events-none text-[12px] text-white sm:text-base">Frame Name here</div>
+    <div class="icon-container">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+        </g>
+      </svg>
+      <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+          <line x1="20" y1="2" x2="0" y2="18" stroke="#fff" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+   <div id="frame-item" class="w-full bg-[#707070] text-black bg-opacity-80 h-10 rounded-xl flex justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+    <div class="font-medium pointer-events-none text-[12px] text-white sm:text-base">Frame Name here</div>
+    <div class="icon-container">
+      <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+        </g>
+      </svg>
+      <svg id="eye-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20.703" height="16.116" viewBox="0 0 20.703 16.116">
+        <g id="Group_164" data-name="Group 164" transform="translate(0.004 -2.655)">
+          <path id="Path_131" data-name="Path 131" d="M20.066,8.488a11.42,11.42,0,0,0-9.719-5.833A11.42,11.42,0,0,0,.628,8.488a4.232,4.232,0,0,0,0,4.451,11.42,11.42,0,0,0,9.719,5.833,11.42,11.42,0,0,0,9.719-5.833A4.232,4.232,0,0,0,20.066,8.488ZM18.6,12.036a9.756,9.756,0,0,1-8.249,5.011A9.756,9.756,0,0,1,2.1,12.036a2.516,2.516,0,0,1,0-2.646A9.756,9.756,0,0,1,10.347,4.38,9.749,9.749,0,0,1,18.6,9.39,2.516,2.516,0,0,1,18.6,12.036Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_132" data-name="Path 132" d="M11.312,7a4.312,4.312,0,1,0,4.312,4.312A4.312,4.312,0,0,0,11.312,7Zm0,6.9A2.587,2.587,0,1,1,13.9,11.312,2.587,2.587,0,0,1,11.312,13.9Z" transform="translate(-0.964 -0.598)" fill="#fff"/>
+          <line x1="20" y1="2" x2="0" y2="18" stroke="#fff" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div> -->
+            </div>
+
+            <div id="edit-frame-parent-container" class="relative w-full h-full">
+              <div id="edit-frame"
+                class="hidden flex w-full h-full flex-col items-center justify-start gap-[10px] relative">
+
+                <!--(2nd) New Input dragging Option -->
+
+                <div id="edit-frame-dragging-div"
+                  class="w-full h-fit rounded-xl flex flex-col justify-center gap-2 items-center">
+                  <div class="flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full">
+                    <label class="text-[12px] sm:text-base">X axis</label>
+                    <div
+                      class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                      <input
+                      id="editFrame-xValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute text-center custom-shadow -top-5 w-16 z-50 text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1 outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                      <!-- <span id="x-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                      <div
+                        class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                      </div>
+                      <div
+                        class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div
+                        class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div id="x-image-wrapper"
+                        class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      </div>
+
+                      <div id="editFrame-x-slider"
+                        class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                        <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                        <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full">
+                    <label class="text-[12px] sm:text-base">Y axis</label>
+                    <div
+                      class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                      <input
+                      id="editFrame-yValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute text-center custom-shadow -top-5 w-16 z-50 w-full text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                      <!-- <span id="y-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                      <div
+                        class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                      </div>
+                      <div
+                        class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div
+                        class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div id="y-image-wrapper"
+                        class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      </div>
+
+                      <div id="editFrame-y-slider"
+                        class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                        <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                        <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hidden flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full">
+                    <label class="text-[12px] sm:text-base">Z axis</label>
+                    <div
+                      class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                      <input
+                      id="editFrame-zValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute text-center custom-shadow -top-5 w-16 z-50 w-full text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1 outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                      <!-- <span id="z-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                      <div
+                        class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                      </div>
+                      <div
+                        class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div
+                        class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                      </div>
+                      <div id="z-image-wrapper"
+                        class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                        <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      </div>
+
+                      <div id="editFrame-z-slider"
+                        class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                        <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                        <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <button
+                id="edit-frame-update-btn"
+                class="bg-[#777777] px-8 py-2 rounded-xl text-[12px] sm:text-base mt-2"
+              >
+                Update
+              </button>
+              </div>
+
+              <!-- Overlay Div -->
+              <div id="edit-frame-scale-overlay"
+                class="absolute inset-0 bg-[#2b2b2a] bg-opacity-0 z-50 cursor-not-allowed"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Menu Buttons -->
+  <div id="menu-button-main-container"
+    class="absolute mr-0 lg:mr-4 top-[11px] md:top-[22px] flex flex-row gap-2 lg:gap-4 items-center justify-center select-none">
+    <div id="menu-buttons-left-container"
+      class="bg-[#2b2b2a] w-fit h-fit bg-opacity-60 backdrop-blur-xl rounded-full flex flex-row gap-6 sm:gap-10 px-5 py-4">
+      <button
+        title="Upload 3D Models"
+        id="model-upload-button"
+        class="flex items-center justify-center group"
+      >
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/3D.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] block group-hover:hidden pointer-events-none"
+        />
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/3D-bold.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden group-hover:block pointer-events-none"
+        />
+      </button>
+      <button
+        title="Interior Studio"
+        id="theme-change-button"
+        class="flex items-center justify-center group"
+      >
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Colors.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] block group-hover:hidden pointer-events-none"
+        />
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Colors-bold.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden group-hover:block pointer-events-none"
+        />
+      </button>
+      <button
+        title="Mute / Unmute"
+        id="mute-unmute-button"
+        class="flex items-center justify-center"
+      >
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Volume-unmute.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden pointer-events-none"
+        />
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/volume-mute.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] block pointer-events-none"
+        />
+      </button>
+      <button
+        title="Music"
+        id="ambient-sound-button"
+        class="flex items-center justify-center group"
+      >
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Music.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] block group-hover:hidden pointer-events-none"
+        />
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Music-bold.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden group-hover:block pointer-events-none"
+        />
+      </button>
+      <button
+        title="Settings"
+        id="setting-button"
+        class="flex items-center justify-center group"
+      >
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Settings.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] block group-hover:hidden pointer-events-none"
+        />
+        <img
+          src="https://dwffbzjamvzk3.cloudfront.net/images/Settings-bold.png"
+          class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden group-hover:block pointer-events-none"
+        />
+      </button>
+    </div>
+
+    <button
+      title="Min/Max Screen"
+      id="full-screen-button"
+      class="bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl rounded-full p-4 w-fit h-fit flex items-center justify-center hover:cursor-pointer"
+    >
+      <img
+        id="fullscreen-icon-1"
+        src="https://dwffbzjamvzk3.cloudfront.net/images/Fullscreen-open.png"
+        class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] pointer-events-none"
+      />
+      <img
+        id="fullscreen-icon-2"
+        src="https://dwffbzjamvzk3.cloudfront.net/images/Fullscreen-close.png"
+        class="w-[20px] h-[20px] md:w-[26px] md:h-[26px] hidden pointer-events-none"
+      />
+    </button>
+  </div>
+  <!-- Menu Buttons End-->
+  <div id="menu-card"
+    class="hidden fixed top-1 select-none mr-0 lg:mr-4 mt-[65px] md:mt-[100px] w-[90%] lg:w-[400px] h-fit bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl rounded-2xl">
+    <div id="tooltip-joystick"
+      class="lg:w-72 w-60 absolute top-28 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Joysticks</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        You have two types of joysticks, with default option you can use left
+        joystick to move in forward, backward, left, and right directions and
+        rotation with right joystick or with second type you can use single
+        joystick move in forward, backward, left, and right directions and
+        rotation with mouse or touch. You can also hide joystick and use WASD
+        and arrow keys to move around.
+      </p>
+    </div>
+    <div id="tooltip-vertical-movement"
+      class="lg:w-72 w-60 absolute bottom-32 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Vertical Movement</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        Toggle this button to lock vertical camera movement in the 3D scene to
+        get a fixed perspective or focusing on horizontal exploration without
+        distractions.
+      </p>
+    </div>
+    <div id="tooltip-teleport"
+      class="lg:w-72 w-60 absolute bottom-28 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Click To Move / Teleport</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        Click anywhere on the floor to smoothly move your character in the 3D
+        scene. Ideal for quick navigation.
+      </p>
+    </div>
+    <div id="tooltip-light-intensity"
+      class="lg:w-72 w-60 absolute bottom-28 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Light Intensity</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">You can change the light intensity</p>
+    </div>
+    <div id="tooltip-fov-control"
+      class="lg:w-72 w-60 absolute bottom-12 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">FOV Control</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        FOV (Field of View) adjusts how much of the scene you want to see on
+        screen, Higher values show more surroundings and Lower values offer a
+        focused view, Find your comfort zone.
+      </p>
+    </div>
+    <div id="tooltip-movement-power"
+      class="lg:w-72 w-60 absolute bottom-0 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Movement Power</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        This slider controls how quickly the camera moves in forward, backward,
+        left, and right in response to mouse, joysticks, WASD or arrow keys.
+        Increase for faster reactions, decrease for more precise control.
+      </p>
+    </div>
+    <div id="tooltip-mouse-senstivity"
+      class="lg:w-72 w-60 absolute bottom-6 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+      <div class="flex justify-between items-center">
+        <div class="font-semibold text-sm">Mouse Sensitivity</div>
+      </div>
+      <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+      <p class="text-start text-sm">
+        This slider controls how quickly the camera rotates in response to mouse
+        or joysticks movement. Increase for faster reactions, decrease for more
+        precise control.
+      </p>
+    </div>
+    <div class="relative h-full w-full flex items-center justify-center">
+      <button
+        id="menu-card-close-btn"
+        class="absolute top-[-5px] right-[-5px] rounded-full bg-white w-7 h-7 text-sm font-bold flex items-center justify-center text-center"
+      >
+        X
+      </button>
+
+      <!-- Model Upload Menu -->
+      <div id="modal-menu" class="hidden flex-col landscape:max-lg:flex-row gap-3 h-full w-full py-5 px-5 text-white">
+        <div class="flex flex-col gap-3 flex-1">
+          <div class="flex justify-between items-center font-semibold text-[12px] sm:text-base lg:text-lg">
+            <div class="flex items-center gap-2">
+              <span>Upload 3D Model</span>
+              <svg class="cursor:pointer hidden lg:block" fill="#ffffff" version="1.1" id="upload-model-tooltip-icon"
+                xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 416.979 416.979">
+                <g>
+                  <path
+                    d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                </g>
+              </svg>
+            </div>
+            <div id="tooltip-3d-model"
+              class="lg:w-72 w-60 absolute top-0 rounded-2xl bg-[#2b2b2a] bg-opacity-60 backdrop-blur-xl text-white z-50 px-4 py-4 flex flex-col gap-y-4 lg:right-full cursor-pointer hidden">
+              <div class="flex justify-between items-center">
+                <div class="font-semibold text-sm">Upload 3D Models</div>
+                <div class="z-20"></div>
+              </div>
+              <!-- <div class="w-full h-[140px]">
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      class="border rounded-xl w-full h-full object-cover"
+      autoPlay={true}
+      muted={true}
+      loop={true}
+      controls={false}
+    ></video>
+  </div> -->
+              <p class="font-normal text-start text-sm">
+                Upload your 3D models in (.glb) format to your virtual store.
+                The max limit for all models is 15MB, so use 3D models of a
+                smaller size for a better experience.
+              </p>
+            </div>
+          </div>
+          <div class="file-uploader">
+            <input type="file" id="modelfileInput" class="hidden" />
+            <label
+              id="file-uploader-label"
+              for="modelfileInput"
+              class="flex w-full justify-between items-center bg-[#44444491] hover:bg-[#6e6e6e91] px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-white/30 cursor-pointer"
+            >
+              <div>
+                <div class="text-[12px] sm:text-base font-normal">
+                  Choose File
+                </div>
+                <div class="text-[10px] sm:text-[12px] text-[#7b7b7b]">
+                  File Supported .glb
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="https://dwffbzjamvzk3.cloudfront.net/images/arrow-upload.png"
+                  class="w-[15px] h-[15px] sm:w-[22px] sm:h-[22px]"
+                />
+              </div>
+            </label>
+            <div id="uploading-file-modal-loader"
+              class="hidden w-full justify-center items-center bg-[#44444491] h-[73px] hover:bg-[#6e6e6e91] px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-white/30 cursor-pointer">
+              <div id="uploading-file-modal" class="flex flex-row items-center justify-center gap-2 animate-pulse">
+                <img
+                  src="https://dwffbzjamvzk3.cloudfront.net/images/spinner.png"
+                  alt=""
+                  class="animate-spin w-4 sm:w-6 h-4 sm:h-6"
+                />
+                <div class="text-[12px] sm:text-base font-normal">
+                  Uploading Model...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between gap-3">
+            <span
+              id="asset-store-button"
+              class="flex flex-1 justify-center items-center bg-[#707070] p-1.5 text-white rounded-lg gap-2 text-[12px] sm:text-base"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19.426"
+                height="15.367"
+                viewBox="0 0 19.426 15.367"
+              >
+                <g
+                  id="Group_148"
+                  data-name="Group 148"
+                  transform="translate(-1.1 -6.718)"
+                >
+                  <path
+                    id="Path_129"
+                    data-name="Path 129"
+                    d="M20.307,7.9a6.489,6.489,0,0,0-4.928-2.18A6.577,6.577,0,0,0,10.812,7.5,6.577,6.577,0,0,0,6.245,5.718,6.49,6.49,0,0,0,1.316,7.9a.963.963,0,0,0-.216.62v11.4a.9.9,0,0,0,.45.8.7.7,0,0,0,.834-.147,5.421,5.421,0,0,1,3.861-1.527,5.347,5.347,0,0,1,4.139,1.827.538.538,0,0,0,.856,0,5.35,5.35,0,0,1,4.139-1.827,5.427,5.427,0,0,1,3.862,1.527.7.7,0,0,0,.834.147.894.894,0,0,0,.45-.8V8.519a.962.962,0,0,0-.219-.621ZM2.273,18.986V8.706A5.412,5.412,0,0,1,6.246,7.062a5.4,5.4,0,0,1,3.98,1.656V18.995A6.681,6.681,0,0,0,6.246,17.7a6.659,6.659,0,0,0-3.973,1.285Zm17.079,0a6.778,6.778,0,0,0-7.953.009V8.719a5.4,5.4,0,0,1,3.98-1.656,5.408,5.408,0,0,1,3.973,1.644Z"
+                    transform="translate(0 1)"
+                    fill="#fff"
+                  />
+                </g>
+              </svg>
+              3D Asset Store
+            </span>
+            <span
+              id="existing-frames-button"
+              class="flex flex-1 justify-center items-center bg-[#707070] p-1.5 text-white rounded-lg flex gap-2 text-[12px] sm:text-base"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18.534"
+                height="18.534"
+                viewBox="0 0 18.534 18.534"
+              >
+                <path
+                  id="Path_138"
+                  data-name="Path 138"
+                  d="M17.761,14.672H16.217V3.861h1.544a.772.772,0,0,0,0-1.544H16.217V.772a.772.772,0,0,0-1.544,0V2.317H3.861V.772a.772.772,0,1,0-1.544,0V2.317H.772a.772.772,0,0,0,0,1.544H2.317V14.672H.772a.772.772,0,1,0,0,1.544H2.317v1.544a.772.772,0,0,0,1.544,0V16.217H14.672v1.544a.772.772,0,1,0,1.544,0V16.217h1.544a.772.772,0,0,0,0-1.544Zm-13.9,0V3.861H14.672V14.672Z"
+                  fill="#fff"
+                />
+              </svg>
+              Existing Frames
+            </span>
+          </div>
+          <div id="model-option-buttons" class="hidden w-full bg-[#707070] h-[50px] rounded-xl flex flex-row">
+            <button
+              id="select-model-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] bg-[#908e8d] text-[12px] sm:text-base"
+            >
+              Select Model
+            </button>
+            <button
+              id="edit-model-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] text-[12px] sm:text-base"
+            >
+              Edit Model
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 flex-1 overflow-y-auto scrollbar">
+          <div id="select-edit-cards">
+            <div id="select-model-list"
+              class="flex w-full h-full overflow-y-auto scrollbar flex-col items-center justify-start gap-[10px] max-h-[180px] lg:max-h-[150px] pr-1">
+              <div id="model-item"
+                class="hidden w-full bg-[#dcdada] text-black bg-opacity-80 h-10 rounded-xl flex-row justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+                <div id="" class="font-medium pointer-events-none text-[12px] sm:text-base">
+                  Model name here
+                </div>
+                <!-- <span class="inline-flex items-center justify-center h-5 w-9 rounded-full bg-green-500 text-black">new</span> -->
+                <button
+                  class="flex rounded-md my-1 text-[12px] sm:text-xs h-full px-3 items-center justify-center bg-[#777777] text-white hover:opacity-80 hover:cursor-pointer"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+            <div id="edit-model" class="hidden w-full flex-col justify-start gap-[10px]">
+              <div id="frame-uploading-indicator"
+                class="hidden relative w-full h-[35px] sm:h-[45px] border border-white/30 rounded-xl flex flex-row justify-between items-center px-1 sm:px-2 py-2 sm:py-4">
+                <div class=" justify-center items-center w-full rounded-2xl cursor-pointer">
+                  <div id="uploading-file-modal" class="flex flex-row items-center justify-center gap-2 animate-pulse">
+                    <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/spinner.png"
+                        alt=""
+                        class="animate-spin w-6 h-6"
+                      />
+                    <div class="text-sm">Uploading Frame...</div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="frame-uploaded-name"
+                class="hidden relative w-full h-[35px] sm:h-[45px] border border-white/30 rounded-xl flex flex-row justify-between items-center px-1 sm:px-2 py-2 sm:py-4">
+                <div class="flex justify-center items-center w-full rounded-2xl cursor-pointer">
+                  Uploaded Frame Name
+                </div>
+                <div id="reset-frame-overlay"
+                  class="hidden absolute inset-0 flex justify-center items-center bg-black/60 rounded-xl text-white">
+                  Reset Frame
+                </div>
+              </div>
+
+
+              <div id="frame-upload-file"
+                class="hidden relative w-full h-[35px] sm:h-[45px] border border-white/30 rounded-xl flex flex-row justify-between items-center px-1 sm:px-2 py-2 sm:py-4">
+                <span class=" text-white text-[12px] sm:text-base">Upload File</span>
+                <div class="relative">
+                  <button id="choose-file-drop-down-button" class="rounded-full px-5 py-1 bg-[#707070] text-white text-[12px] sm:text-base">Choose File Type</button>
+                  <div id="choose-file-drop-down"
+                    class="hidden absolute left-0 mt-1 bg-[#404040] border border-white/30 rounded-md shadow-lg z-10 w-full">
+                    <div class="block p-2 hover:bg-[#565151] text-white text-sm cursor-pointer relative">
+                      <input
+                    class="opacity-0 w-full h-full cursor-pointer absolute"
+                    id="frame-image-input"
+                    type="file"
+                    type="file" accept="image/*"
+                  />
+                      <div
+                        class=" w-full flex landscape:max-lg:flex-row flex-col items-center justify-start landscape:max-lg:gap-4 z-50">
+                        <div class="flex flex-col items-center justify-center">
+                          <div id="frame-image-name" class="text-sm lg:text-base">
+                            Upload Image
+                          </div>
+                          <div id="frame-image-file-support" class="text-xs text-white/40 text-center">
+                            Supported file Size: 50Kb
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block p-2 hover:bg-[#565151] text-white text-sm cursor-pointer relative">
+                      <input
+                    class="opacity-0 w-full h-full cursor-pointer absolute"
+                    id="frame-video-input"
+                    type="file"
+                    accept="video/*,.mkv"
+                  />
+                      <div
+                        class="w-full flex landscape:max-lg:flex-row flex-col items-center justify-center landscape:max-lg:gap-4 z-50">
+                        <div class="flex flex-col items-center justify-center">
+                          <div id="frame-video-name" class="text-sm lg:text-base">
+                            Upload Video
+                          </div>
+                          <div id="frame-video-file-support" class="text-xs text-white/40 text-center">
+                            Supported file Size: 5Mb
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between gap-2">
+                <span
+                  class="w-[25%] font-medium pointer-events-none text-[12px] sm:text-base"
+                  >Model Link</span>
+                <input
+                  id="model-linking-input"
+                  placeholder="https://example.com"
+                  class="w-[75%] bg-transparent border border-white/30 rounded-md text-sm p-1 outline-none ring-0 active:outline-none active:ring-0 select-none"
+                />
+              </div>
+              <div
+                class="w-full h-[40px] sm:h-[50px] border border-white/30 rounded-xl flex flex-row justify-between items-center">
+                <button
+                  id="position-btn"
+                  class="flex-1 text-center rounded-md h-[60%] flex items-center justify-center mx-3 bg-[#676564] text-[#AAAAAA] text-[12px] sm:text-base"
+                >
+                  Position
+                </button>
+                <button
+                  id="rotation-btn"
+                  class="flex-1 text-center rounded-md h-[60%] flex items-center justify-center mx-3 text-[#AAAAAA] text-[12px] sm:text-base"
+                >
+                  Rotation
+                </button>
+                <button
+                  id="scale-btn"
+                  class="flex-1 text-center rounded-md h-[60%] flex items-center justify-center mx-3 text-[#AAAAAA] text-[12px] sm:text-base"
+                >
+                  Scale
+                </button>
+              </div>
+
+              <!--(2nd) New Input dragging Option -->
+
+              <div id="dragging-div"
+                class="flex w-full h-full overflow-y-auto scrollbar flex-col items-center justify-start gap-[10px] max-h-[85px] lg:max-h-[85px] pr-1">
+                <label
+                  id="scale-lock"
+                  class="w-full hidden items-center justify-between gap-2 cursor-pointer"
+                >
+                  <span class="text-[12px] sm:text-base">Scale Lock</span>
+
+                  <input
+                    type="checkbox"
+                    default
+                    value=""
+                    class="sr-only peer"
+                    checked
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="white"
+                    class="hidden peer-checked:flex mr-4 text-white"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M144 128v64H304V128c0-44.2-35.8-80-80-80s-80 35.8-80 80zM96 192V128C96 57.3 153.3 0 224 0s128 57.3 128 128v64h32c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H96zM48 256V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V256c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="white"
+                    class="flex peer-checked:hidden mr-4 text-white"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      d="M352 128c0-44.2 35.8-80 80-80s80 35.8 80 80v72c0 13.3 10.7 24 24 24s24-10.7 24-24V128C560 57.3 502.7 0 432 0S304 57.3 304 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16z"
+                    />
+                  </svg>
+                  <!-- <div class="relative w-10 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gray-500"></div> -->
+                </label>
+                <div class="flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full px-2">
+                  <label class="text-[12px] sm:text-base">X axis</label>
+                  <div
+                    class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                    <input
+                      id="xValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute custom-shadow -top-5 w-16 z-50 text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1 outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                    <!-- <span id="x-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                    <div
+                      class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                    </div>
+                    <div
+                      class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div
+                      class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div id="x-image-wrapper"
+                      class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                    </div>
+
+                    <div id="x-slider"
+                      class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                      <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                      <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full px-2">
+                  <label class="text-[12px] sm:text-base">Y axis</label>
+                  <div
+                    class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                    <input
+                      id="yValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute custom-shadow -top-5 w-16 z-50 w-full text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                    <!-- <span id="y-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                    <div
+                      class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                    </div>
+                    <div
+                      class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div
+                      class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div id="y-image-wrapper"
+                      class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                    </div>
+
+                    <div id="y-slider"
+                      class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                      <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                      <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-1 text-center flex flex-col items-start justify-center gap-1 relative w-full px-2">
+                  <label class="text-[12px] sm:text-base">Z axis</label>
+                  <div
+                    class="relative flex items-center justify-center flex-1 w-full bg-[#44444491] hover:bg-[#504f4f91] rounded-md pt-1 sm:pt-3 custom-box-shadow">
+                    <input
+                      id="zValue"
+                      step="0.1"
+                      value="0"
+                      type="number"
+                      class="absolute custom-shadow -top-5 w-16 z-50 w-full text-center !appearance-none bg-transparent border border-white/30 rounded-md text-[12px] sm:text-sm p-0.5 sm:p-1 outline-none ring-0 active:bg-[#777777] active:outline-none active:ring-0 select-none"
+                    />
+                    <!-- <span id="z-unit" class="absolute -top-3 ml-9 text-xs text-white">px</span> -->
+                    <div
+                      class="absolute top-2 w-0 h-0 border-[7px] border-transparent border-t-white box-shadow border-b-0">
+                    </div>
+                    <div
+                      class="left-0 top-0 w-1/2 h-full absolute bg-gradient-to-r from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div
+                      class="right-0 top-0 w-1/2 h-full absolute bg-gradient-to-l from-[#444444] to-transparent z-50 rounded-md">
+                    </div>
+                    <div id="z-image-wrapper"
+                      class="z-20 w-full absolute px-2 flex flex-row items-center justify-center overflow-hidden transition-all ease-in duration-500">
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/Dial.png"
+                        class="z-20 w-full"
+                      />
+                    </div>
+
+                    <div id="z-slider"
+                      class="relative flex items-center justify-center w-full py-4 hover:cursor-ew-resize active:cursor-ew-resize draggable-slider z-50">
+                      <span
+                        class="opacity-0 z-50 absolute right-1 text-xs text-black hidden"
+                      >
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="opacity-90 text-semibold"
+                        >
+                          <path
+                            d="M1.46967 10.4697C1.17678 10.7626 1.17678 11.2374 1.46967 11.5303L6.24264 16.3033C6.53553 16.5962 7.01041 16.5962 7.3033 16.3033C7.59619 16.0104 7.59619 15.5355 7.3033 15.2426L3.06066 11L7.3033 6.75736C7.59619 6.46447 7.59619 5.98959 7.3033 5.6967C7.01041 5.40381 6.53553 5.40381 6.24264 5.6967L1.46967 10.4697ZM20.5303 11.5303C20.8232 11.2374 20.8232 10.7626 20.5303 10.4697L15.7574 5.6967C15.4645 5.40381 14.9896 5.40381 14.6967 5.6967C14.4038 5.98959 14.4038 6.46447 14.6967 6.75736L18.9393 11L14.6967 15.2426C14.4038 15.5355 14.4038 16.0104 14.6967 16.3033C14.9896 16.5962 15.4645 16.5962 15.7574 16.3033L20.5303 11.5303ZM2 11.75H20V10.25H2V11.75Z"
+                            fill="white"
+                          />
+                          <mask id="path-2-inside-1_562_45" fill="white">
+                            <rect width="22" height="22" rx="1" />
+                          </mask>
+                          <rect
+                            width="22"
+                            height="22"
+                            rx="1"
+                            stroke="white"
+                            stroke-width="3"
+                            mask="url(#path-2-inside-1_562_45)"
+                          />
+                        </svg>
+                      </span>
+
+                      <span
+                        class="opacity-0 z-20 absolute right-2 text-xs text-white/50"
+                        >px</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                id="model-update"
+                class="bg-[#777777] px-8 py-2 rounded-xl text-[12px] sm:text-base mt-2"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model Upload End -->
+      <!-- Theme Menu -->
+      <div id="theme-menu" class="hidden h-fit w-full">
+        <div id="theme-menu-inital" class="flex flex-col w-full items-center justify-center gap-10 min-h-[220px]">
+          <img
+            src="https://dwffbzjamvzk3.cloudfront.net/images/Cursor_icon.png"
+            class="w-14"
+          />
+          <div class="text-white/80">Select any object to continue</div>
+        </div>
+        <div id="theme-menu-main"
+          class="hidden flex-col gap-4 h-full w-full py-4 md:py-6 lg:py-8 px-6 text-white min-h-[220px] justify-center items-center">
+          <div class="font-semibold text-base lg:text-lg w-full text-start">
+            Selected object:
+            <span id="selected-object" class="font-thin">Wall</span>
+          </div>
+          <div id="theme-option-buttons" class="w-full bg-[#707070] h-[45px] rounded-xl flex flex-row">
+            <button
+              id="select-color-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] bg-[#908e8d] text-[12px] sm:text-base"
+            >
+              Tint
+            </button>
+            <button
+              id="select-image-btn"
+              class="flex-1 flex items-center justify-center rounded-lg m-[6px] text-[12px] sm:text-base"
+            >
+              Texture
+            </button>
+          </div>
+          <div id="select-theme-cards" class="w-full">
+            <div id="color-card" class="flex flex-col gap-1">
+              <div class="font-semibold text-sm sm:text-base w-full text-start">
+                Color
+              </div>
+              <div class="bg-[#707070] rounded-xl w-full h-12 md:h-14 p-[1px] relative hover:cursor-pointer">
+                <input
+                  id="colorInput"
+                  type="color"
+                  class="w-full h-full opacity-0 absolute hover:cursor-pointer"
+                />
+                <div class="w-full h-full rounded-xl" id="colorDisplay"></div>
+              </div>
+              <button
+                id="update-color-btn"
+                class="bg-[#777777] px-8 py-1 sm:py-2 rounded-xl text-[12px] sm:text-base mt-[20px] w-fit mx-auto"
+              >
+                Update
+              </button>
+            </div>
+            <div id="image-card" class="hidden flex-col">
+              <!-- <div id="texture-preview" class="rounded-lg relative w-full h-30 flex items-center justify-center">    
+              <div
+                class="opacity-0 cursor-pointer rounded-lg hover:opacity-100 w-full h-full absolute bg-black/60 flex items-center justify-center"
+              >
+                <div class="text-white">Reset Texture</div>
+              </div> -->
+              <!-- <img id="texture-preview-image"
+               src="https://dwffbzjamvzk3.cloudfront.net/images/arrow-upload.png"
+                class="rounded-lg px-1 object-contain max-h-30 py-1"
+              />
+            </div> -->
+              <div class="flex flex-col sm:flex-row gap-4 h-fit items-center justify-center">
+                <div
+                  class="flex-1 w-full sm:w-fit flex items-center justify-center h-full bg-[#44444491] rounded-xl border-[2px] border-dashed border-white/30 relative py-4 px-2">
+                  <input
+                    class="opacity-0 w-full h-full cursor-pointer absolute"
+                    id="texture-upload"
+                    type="file"
+                  />
+                  <div
+                    class="w-full h:16 md:h-20 flex landscape:max-lg:flex-row flex-col items-center justify-center landscape:max-lg:gap-4">
+                    <img
+                      id="upload-icon"
+                      src="https://dwffbzjamvzk3.cloudfront.net/images/arrow-upload.png"
+                      class="w-6 landscape:max-lg:mb-0 mb-4"
+                    />
+                    <div class="flex flex-col items-center justify-center">
+                      <div id="image-name" class="text-sm lg:text-base">
+                        Upload Image
+                      </div>
+                      <div id="file-support" class="text-xs text-white/40 text-center">
+                        File Supported (png, jpeg) | Max Size 250kb
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden justify-center items-center w-full h-20 rounded-2xl cursor-pointer">
+                    <div id="uploading-file-modal"
+                      class="flex flex-row items-center justify-center gap-2 animate-pulse">
+                      <img
+                        src="https://dwffbzjamvzk3.cloudfront.net/images/spinner.png"
+                        alt=""
+                        class="animate-spin w-6 h-6"
+                      />
+                      <div class="text-sm">Uploading Texture...</div>
+                    </div>
+                  </div>
+                  <!-- texture reset -->
+                  <div id="texture-reset"
+                    class="opacity-0 cursor-pointer rounded-lg hover:opacity-100 w-full h-full absolute bg-black/60 flex items-center justify-center">
+                    <button id="texture-reset-button" class="text-white">
+                      Reset Texture
+                    </button>
+                  </div>
+                </div>
+                <div id="texture-options" class="hidden flex flex-col justify-center items-center gap-2">
+                  <div id="uv-container"
+                    class="flex-1 flex flex-col h-fit items-center justify-center rounded-xl p-2 bg-gray-400/30">
+                    <div class="flex-1 w-full">
+                      <div class="text-start text-xs">Tilling</div>
+                      <div class="flex flex-row mt-2 justify-center gap-2 lg:justify-between">
+                        <div class="text-center flex flex-row items-center justify-center gap-1 relative">
+                          <div class="text-sm">U</div>
+                          <div class="flex flex-row items-center justify-center relative">
+                            <input
+                              id="xTiling"
+                              value="0"
+                              type="number"
+                              class="z-50 draggable-input w-[55px] bg-transparent border border-white/30 rounded-md text-sm p-1 outline-none ring-0 active:outline-none active:ring-0 active:bg-[#777777] select-none active:cursor-ew-resize"
+                            />
+                            <span
+                              class="z-50 absolute right-1 text-xs text-black hidden"
+                            >
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1.14645 10.6464C0.951184 10.8417 0.951184 11.1583 1.14645 11.3536L4.32843 14.5355C4.52369 14.7308 4.84027 14.7308 5.03553 14.5355C5.2308 14.3403 5.2308 14.0237 5.03553 13.8284L2.20711 11L5.03553 8.17157C5.2308 7.97631 5.2308 7.65973 5.03553 7.46447C4.84027 7.2692 4.52369 7.2692 4.32843 7.46447L1.14645 10.6464ZM20.8536 11.3536C21.0488 11.1583 21.0488 10.8417 20.8536 10.6464L17.6716 7.46447C17.4763 7.2692 17.1597 7.2692 16.9645 7.46447C16.7692 7.65973 16.7692 7.97631 16.9645 8.17157L19.7929 11L16.9645 13.8284C16.7692 14.0237 16.7692 14.3403 16.9645 14.5355C17.1597 14.7308 17.4763 14.7308 17.6716 14.5355L20.8536 11.3536ZM1.5 11.5H20.5V10.5H1.5V11.5Z"
+                                  fill="white"
+                                />
+                                <rect
+                                  x="0.5"
+                                  y="0.5"
+                                  width="21"
+                                  height="21"
+                                  rx="0.5"
+                                  stroke="white"
+                                />
+                              </svg>
+                            </span>
+
+                            <span
+                              class="absolute right-2 text-xs text-white/50 z-20"
+                              >px</span>
+                          </div>
+                        </div>
+
+                        <div class="text-center flex flex-row items-center justify-center gap-1 relative">
+                          <label class="text-sm">V</label>
+                          <div class="flex flex-row items-center justify-center relative">
+                            <input
+                              id="yTiling"
+                              value="0"
+                              type="number"
+                              class="z-50 draggable-input w-[55px] bg-transparent border border-white/30 rounded-md text-sm p-1 outline-none ring-0 active:outline-none active:ring-0 active:bg-[#777777] select-none active:cursor-ew-resize"
+                            />
+                            <span
+                              class="z-50 absolute right-1 text-xs text-black hidden"
+                            >
+                              <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1.14645 10.6464C0.951184 10.8417 0.951184 11.1583 1.14645 11.3536L4.32843 14.5355C4.52369 14.7308 4.84027 14.7308 5.03553 14.5355C5.2308 14.3403 5.2308 14.0237 5.03553 13.8284L2.20711 11L5.03553 8.17157C5.2308 7.97631 5.2308 7.65973 5.03553 7.46447C4.84027 7.2692 4.52369 7.2692 4.32843 7.46447L1.14645 10.6464ZM20.8536 11.3536C21.0488 11.1583 21.0488 10.8417 20.8536 10.6464L17.6716 7.46447C17.4763 7.2692 17.1597 7.2692 16.9645 7.46447C16.7692 7.65973 16.7692 7.97631 16.9645 8.17157L19.7929 11L16.9645 13.8284C16.7692 14.0237 16.7692 14.3403 16.9645 14.5355C17.1597 14.7308 17.4763 14.7308 17.6716 14.5355L20.8536 11.3536ZM1.5 11.5H20.5V10.5H1.5V11.5Z"
+                                  fill="white"
+                                />
+                                <rect
+                                  x="0.5"
+                                  y="0.5"
+                                  width="21"
+                                  height="21"
+                                  rx="0.5"
+                                  stroke="white"
+                                />
+                              </svg>
+                            </span>
+
+                            <span
+                              class="absolute right-2 text-xs text-white/50 z-20"
+                              >px</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="texture-rotation-container"
+                    class="flex h-fit items-center justify-center rounded-xl p-2 bg-gray-400/30 w-full">
+                    <div class="flex justify-between w-full">
+                      <div class="text-start text-xs">Rotation</div>
+                      <svg class="scale-x-[-1] cursor-pointer" width="18" height="18" fill="white"
+                        id="texture-rotation-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                          d="M369.1 142.9L312 200l24 24H496V64L472 40 414.4 97.6l0 0c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0l-45.3-45.3c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0l0 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                id="update-texture-btn"
+                class="bg-[#777777] px-8 py-1 sm:py-2 rounded-xl text-[12px] sm:text-base mt-[20px] w-fit mx-auto"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Theme Menu End -->
+
+      <!-- Sound Menu -->
+      <div id="sound-menu"
+        class="hidden flex-col landscape:max-lg:flex-row items-center justify-start h-fit w-full py-6 lg:py-8 px-6 text-white gap-4">
+        <div class="flex flex-col w-full gap-4">
+          <div class="font-semibold text-base lg:text-lg w-full">
+            Select Music
+          </div>
+          <div id="select-music-list"
+            class="flex w-full h-fit overflow-y-auto scrollbar flex-col items-center justify-start gap-[10px] max-h-[150px]">
+            <div id="0"
+              class="w-full bg-[#dcdada] text-black bg-opacity-80 h-10 rounded-xl flex flex-row justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+              <div class="font-medium text-xs lg:text-base">Neon Echoes</div>
+            </div>
+            <div id="1"
+              class="w-full bg-[#63615F] text-white bg-opacity-80 h-10 rounded-xl flex flex-row justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+              <div class="font-medium text-xs lg:text-base">
+                Midnight Odyssey
+              </div>
+            </div>
+            <div id="2"
+              class="w-full bg-[#63615F] text-white bg-opacity-80 h-10 rounded-xl flex flex-row justify-between items-center px-3 py-2 text-sm hover:cursor-pointer">
+              <div class="font-medium text-xs lg:text-base">
+                Rhythms of the Lost City
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full gap-4">
+          <div class="font-semibold text-base lg:text-lg w-full">
+            Upload Your Music
+          </div>
+          <div class="w-full h-16">
+            <input type="file" id="musicfileInput" class="hidden" />
+
+            <!-- When No Mp3 Uploaded Show this -->
+            <label
+              for="musicfileInput"
+              id="musicInput"
+              class="flex w-full justify-between items-center bg-[#44444491] hover:bg-[#6e6e6e91] px-5 h-full rounded-2xl border border-white/30 cursor-pointer"
+            >
+              <div>
+                <div class="text-base font-normal">Choose File</div>
+                <div class="text-xs text-[10px] text-[#7b7b7b]">
+                  File Supported .mp3 | Max Size 1mb
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://dwffbzjamvzk3.cloudfront.net/images/arrow-upload.png"
+                  class="w-[22px]"
+                />
+              </div>
+            </label>
+            <!-- When mp3 is uploading -->
+            <div
+              class="hidden w-full justify-center items-center bg-[#44444491] h-[50px] hover:bg-[#6e6e6e91] px-5 py-4 rounded-2xl border border-white/30 cursor-pointer">
+              <div id="uploading-file-modal" class="flex flex-row items-center justify-center gap-2 animate-pulse">
+                <img
+                  src="https://dwffbzjamvzk3.cloudfront.net/images/spinner.png"
+                  alt=""
+                  class="animate-spin w-6 h-6"
+                />
+                <div>Uploading Music...</div>
+              </div>
+            </div>
+            <!-- If Uploaded and selected show this -->
+            <div id="uploaded-music"
+              class="hidden w-full bg-[#dcdada] text-black bg-opacity-80 h-[50px] rounded-xl flex-row justify-between items-center px-5 py-2 text-sm">
+              <div class="font-medium">My Music.mp3</div>
+              <button
+                id="remove-sound"
+                class="rounded-md my-1 text-xs py-2 px-3 flex items-center justify-center bg-[#777777] text-white"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+          <button
+            id="update-sound"
+            class="bg-[#777777] px-8 py-2 rounded-xl text-[12px] md:text-base mt-2 w-fit mx-auto"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+      <!-- Sound Menu End -->
+
+      <!-- Settings Menu -->
+
+      <!-- new settings -->
+
+      <div id="setting-menu"
+        class="hidden w-[90%] max-w-[700px] max-h-[520px] h-fit py-6 landscape:max-lg:py-3 landscape:max-lg:px-2 text-white/40 flex-col landscape:max-lg:gap-5 gap-5 items-center justify-center transition-all duration-500 ease-in-out relative select-none">
+        <div class="flex justify-start w-full text-white font-semibold text-sm sm:text-base lg:text-lg">
+          Controls
+        </div>
+        <div
+          class="w-full flex justify-center flex-col space-y-3 landscape:max-lg:space-y-0 landscape:max-lg:flex-row landscape:max-lg:space-x-10">
+          <div
+            class="flex justify-start items-center flex-col landscape:max-lg:space-y-2 space-y-1 landscape:max-lg:my-2">
+            <div class="flex w-full justify-between text-white space-x-1 sm:space-x-2">
+              <div class="flex-col space-y-1">
+                <div class="text-sm">Movement</div>
+                <div class="w-[78px] h-[78px] sm:w-24 sm:h-24 flex justify-center items-center rounded-lg bg-stone-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80.125" height="80.125" viewBox="0 0 90.125 90.125">
+                    <g id="Group_82" data-name="Group 82" transform="translate(-1509.825 -264.825)">
+                      <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(1554.888 264.825) rotate(45)"
+                        fill="none" stroke="#fff" stroke-width="1" opacity="0.2">
+                        <rect width="63.728" height="63.728" rx="10" stroke="none" />
+                        <rect x="0.5" y="0.5" width="62.728" height="62.728" rx="9.5" fill="none" />
+                      </g>
+                      <g id="Group_78" data-name="Group 78" transform="translate(1543.563 277.082)">
+                        <circle id="Ellipse_8" data-name="Ellipse 8" cx="11" cy="11" r="11"
+                          transform="translate(0.325 -0.194)" fill="#fff" opacity="0.3" />
+                        <text id="W" transform="translate(5.324 14.806)" fill="#fff" font-size="11"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">W</tspan>
+                        </text>
+                      </g>
+                      <g id="Group_79" data-name="Group 79" transform="translate(1566.987 298.563)">
+                        <circle id="Ellipse_9" data-name="Ellipse 9" cx="11" cy="11" r="11"
+                          transform="translate(-0.101 0.325)" fill="#fff" opacity="0.3" />
+                        <text id="D" transform="translate(6.9 15.325)" fill="#fff" font-size="11"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">D</tspan>
+                        </text>
+                      </g>
+                      <g id="Group_81" data-name="Group 81" transform="translate(1520.138 298.563)">
+                        <circle id="Ellipse_10" data-name="Ellipse 10" cx="11" cy="11" r="11"
+                          transform="translate(-0.251 0.325)" fill="#fff" opacity="0.3" />
+                        <text id="A" transform="translate(6.75 15.325)" fill="#fff" font-size="11"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">A</tspan>
+                        </text>
+                      </g>
+                      <g id="Group_80" data-name="Group 80" transform="translate(1543.563 321.987)">
+                        <circle id="Ellipse_11" data-name="Ellipse 11" cx="11" cy="11" r="11"
+                          transform="translate(0.325 -0.1)" fill="#fff" opacity="0.3" />
+                        <text id="S" transform="translate(7.324 13.9)" fill="#fff" font-size="11"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">S</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-col space-y-1">
+                <div class="text-sm">Navigation</div>
+                <div class="w-[78px] h-[78px] sm:w-24 sm:h-24 flex justify-center items-center rounded-lg bg-stone-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="70" height="55" viewBox="0 0 105 69">
+                    <g id="Group_110" data-name="Group 110" transform="translate(-1507 -264)">
+                      <g id="Group_109" data-name="Group 109">
+                        <g id="right" transform="translate(62 -2)">
+                          <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(1502 266)" fill="none"
+                            stroke="#fff" stroke-width="1" opacity="0.2">
+                            <rect width="48" height="48" rx="8" stroke="none" />
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="none" />
+                          </g>
+                          <g id="mouse" transform="translate(1515.841 275.358)">
+                            <path id="Path_122" data-name="Path 122"
+                              d="M200.87,100a10.171,10.171,0,0,0-9.03,10.093v.376h9.03Zm11.288,12.727v6.4a10.159,10.159,0,1,1-20.318,0v-6.4Zm-9.03-2.258V100a10.171,10.171,0,0,1,9.03,10.093v.376Z"
+                              transform="translate(-191.84 -100)" fill="#fff" opacity="0.3" />
+                            <path id="Path_121" data-name="Path 121"
+                              d="M191.84,110.469V100a10.171,10.171,0,0,1,9.03,10.093v.376Z"
+                              transform="translate(-180.552 -100)" fill="#fff" />
+                          </g>
+                        </g>
+                        <text id="R" transform="translate(1584 330)" fill="#fff" font-size="12"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">R</tspan>
+                        </text>
+                      </g>
+                      <g id="Group_108" data-name="Group 108">
+                        <g id="left" transform="translate(5 -2)">
+                          <g id="Rectangle_78-2" data-name="Rectangle 78" transform="translate(1502 266)" fill="none"
+                            stroke="#fff" stroke-width="1" opacity="0.2">
+                            <rect width="48" height="48" rx="8" stroke="none" />
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="none" />
+                          </g>
+                          <g id="mouse-2" data-name="mouse" transform="translate(0.96 1.384)">
+                            <path id="Path_122-2" data-name="Path 122"
+                              d="M203.128,100a10.171,10.171,0,0,1,9.03,10.093v.376h-9.03ZM191.84,112.727v6.4a10.159,10.159,0,0,0,20.319,0v-6.4Zm9.03-2.258V100a10.171,10.171,0,0,0-9.03,10.093v.376Z"
+                              transform="translate(1323.041 173.975)" fill="#fff" opacity="0.3" />
+                            <path id="Path_121-2" data-name="Path 121"
+                              d="M200.87,110.469V100a10.171,10.171,0,0,0-9.03,10.093v.376Z"
+                              transform="translate(1323.041 173.975)" fill="#fff" />
+                          </g>
+                        </g>
+                        <text id="L" transform="translate(1528 330)" fill="#fff" font-size="12"
+                          font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                          <tspan x="0" y="0">L</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-col space-y-1">
+                <div class="text-sm">Interaction</div>
+                <div class="w-[78px] h-[78px] sm:w-24 sm:h-24 flex justify-center items-center rounded-lg bg-stone-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 48 69">
+                    <g id="Group_111" data-name="Group 111" transform="translate(-1535 -264)">
+                      <g id="left" transform="translate(33 -2)">
+                        <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(1502 266)" fill="none"
+                          stroke="#fff" stroke-width="1" opacity="0.2">
+                          <rect width="48" height="48" rx="8" stroke="none" />
+                          <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" fill="none" />
+                        </g>
+                        <g id="mouse" transform="translate(0.96 1.384)">
+                          <path id="Path_122" data-name="Path 122"
+                            d="M203.128,100a10.171,10.171,0,0,1,9.03,10.093v.376h-9.03ZM191.84,112.727v6.4a10.159,10.159,0,0,0,20.319,0v-6.4Zm9.03-2.258V100a10.171,10.171,0,0,0-9.03,10.093v.376Z"
+                            transform="translate(1323.041 173.975)" fill="#fff" opacity="0.3" />
+                          <path id="Path_121" data-name="Path 121"
+                            d="M200.87,110.469V100a10.171,10.171,0,0,0-9.03,10.093v.376Z"
+                            transform="translate(1323.041 173.975)" fill="#fff" />
+                        </g>
+                      </g>
+                      <text id="L" transform="translate(1556 330)" fill="#fff" font-size="12"
+                        font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+                        <tspan x="0" y="0">L</tspan>
+                      </text>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="w-full flex-col justify-start text-white space-y-1">
+              <div class="text-sm flex items-center gap-2">
+                <span> Joysticks </span>
+                <svg class="cursor-pointer hidden lg:block" fill="#ffffff" version="1.1" id="joysticks-tooltip-icon"
+                  xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 416.979 416.979">
+                  <g>
+                    <path
+                      d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="flex items-center justify-between">
+                <div id="joystick-type-2"
+                  class="w-[32%] sm:w-[30%] landscape:w-[39%] h-8 bg-stone-700 text-xs sm:text-sm rounded-md flex text-center items-center justify-center border-2 border-white">
+                  One-Handed
+                </div>
+                <div id="joystick-type-1"
+                  class="w-[32%] sm:w-[30%] landscape:w-[39%] h-8 bg-stone-700 text-xs sm:text-sm rounded-md flex text-center items-center justify-center border-2 border-white">
+                  Two-Handed
+                </div>
+                <div id="hide-joystick"
+                  class="w-[32%] sm:w-[30%] landscape:w-[18%] h-8 bg-stone-700 text-xs sm:text-sm rounded-md flex text-center items-center justify-center border-2 border-white">
+                  Hide
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-start items-center flex-col landscape:max-lg:space-y-1 space-y-1 landscape:max-lg:my-2">
+            <div
+              class="flex flex-row justify-between w-full mx-auto items-center space-x-3 bg-stone-700 p-2 rounded-md">
+              <div class="text-[14px] md:text-base flex items-center gap-2">
+                <span class="text-white"> Vertical Movement </span>
+                <svg class="hidden lg:block cursor:pointer" fill="#ffffff" version="1.1"
+                  id="vertical-movement-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                  viewBox="0 0 416.979 416.979">
+                  <g>
+                    <path
+                      d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="flex flex-row space-x-2 w-[120px] items-center justify-end">
+                <label
+                  for="vertical-lock"
+                  class="flex items-center cursor-pointer"
+                >
+                  <div class="relative">
+                    <input type="checkbox" id="vertical-lock" class="hidden" />
+                    <div
+                      id="toggle-line"
+                      class="w-8 h-4 bg-green-500 rounded-full shadow-inner"
+                    ></div>
+                    <div
+                      id="toggle-dot"
+                      class="absolute w-4 h-4 bg-white rounded-full shadow inset-y-0 right-0"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="flex flex-row justify-between w-full mx-auto items-center space-x-3 bg-stone-700 p-2 rounded-md">
+              <div class="text-[14px] md:text-base flex items-center gap-2">
+                <span class="text-white"> Click To Move </span>
+                <svg class="hidden lg:block cursor:pointer" fill="#ffffff" version="1.1" id="teleportation-tooltip-icon"
+                  xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 416.979 416.979">
+                  <g>
+                    <path
+                      d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="flex flex-row space-x-2 w-[120px] items-center justify-end">
+                <label
+                  for="teleportation"
+                  class="flex items-center cursor-pointer"
+                >
+                  <div class="relative">
+                    <input type="checkbox" id="teleportation" class="hidden" />
+                    <div
+                      id="teleport-toggle-line"
+                      class="w-8 h-4 bg-green-500 rounded-full shadow-inner"
+                    ></div>
+                    <div
+                      id="teleport-toggle-dot"
+                      class="absolute w-4 h-4 bg-white rounded-full shadow inset-y-0 right-0"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="flex-col w-full justify-start text-white space-y-1">
+              <div class="text-sm">Camera Settings</div>
+              <div class="flex-col w-full bg-stone-700 p-3 rounded-md text-white">
+                <div class="flex flex-col">
+                  <div class="text-[14px] md:text-base flex items-center gap-2">
+                    <span> Perspective </span>
+                    <svg class="cursor-pointer hidden lg:block" fill="#ffffff" version="1.1" id="fov-tooltip-icon"
+                      xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 416.979 416.979">
+                      <g>
+                        <path
+                          d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="flex flex-row space-x-2 items-center justify-between">
+                    <input
+                      id="fov-control"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="60"
+                      class="h-1.5 w-[80%] bg-black rounded-lg cursor-pointer"
+                    />
+                    <span
+                      id="fov-control-value"
+                      class="flex items-center w-12 justify-center px-2 text-sm border border-white bg-stone-600 rounded-md"
+                      >60%</span>
+                  </div>
+                </div>
+                <div class="flex flex-col w-full">
+                  <div class="text-[14px] md:text-base flex items-center gap-2">
+                    <span> Mouse Sensitivity </span>
+                    <svg class="cursor-pointer hidden lg:block" fill="#ffffff" version="1.1"
+                      id="mouse-senstivity-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                      viewBox="0 0 416.979 416.979">
+                      <g>
+                        <path
+                          d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="flex flex-row space-x-2 items-center justify-between">
+                    <input
+                      id="mouse-sensitivity"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="70"
+                      class="h-1.5 w-[80%] bg-black rounded-lg cursor-pointer"
+                    />
+                    <span
+                      id="mouse-senstivity-value"
+                      class="flex items-center w-12 justify-center px-2 text-sm border border-white bg-stone-600 rounded-md"
+                      >70%</span>
+                  </div>
+                </div>
+                <div class="flex flex-col w-full">
+                  <div class="text-[14px] md:text-base flex items-center gap-2">
+                    <span> Movement Power </span>
+                    <svg class="cursor-pointer hidden lg:block" fill="#ffffff" version="1.1"
+                      id="movement-power-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                      viewBox="0 0 416.979 416.979">
+                      <g>
+                        <path
+                          d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+            c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+            c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+            c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+            c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="flex flex-row space-x-2 items-center justify-between">
+                    <input
+                      id="movement-power"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="70"
+                      class="h-1.5 w-[80%] bg-black rounded-lg cursor-pointer"
+                    />
+                    <span
+                      id="movement-power-value"
+                      class="flex items-center w-12 justify-center px-2 text-sm border border-white bg-stone-600 rounded-md"
+                      >70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Settings End -->
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<!-- <div id="footer-exarta" class="hidden w-full h-full relative"> -->
+<div id="footer-exarta" style="-webkit-user-drag: none"
+  class="absolute bg-white/40 bottom-0 z-30 flex w-full items-center justify-center select-none focus-none select-none">
+  <a style="-webkit-user-drag: none"
+    class="font-semibold py-2 text-center flex items-center justify-center space-x-2 text-decoration-none"
+    href="https://exarta.com" target="_blank">
+    <span class="font-semibold text-[#696969] text-sm">Powered By</span>
+    <img
+      style="-webkit-user-drag: none"
+      src="https://zord-storage-bucket.s3.ap-south-1.amazonaws.com/Assets/footer-logo.png"
+      class="h-[13px]"
+    />
+  </a>
+</div>
+<!-- </div> -->

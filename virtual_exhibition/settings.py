@@ -1,3 +1,5 @@
+# 登入後自動跳轉到首頁或展廳
+LOGIN_REDIRECT_URL = '/showroom/'
 """
 Django settings for virtual_exhibition project.
 
@@ -122,3 +124,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+LOGIN_REDIRECT_URL = '/showroom/'

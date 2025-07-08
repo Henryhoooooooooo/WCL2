@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convai AI Web Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #18122B 0%, #393053 100%);
+            color: #fff;
+            font-family: 'Unbounded', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            letter-spacing: 0.5px;
+        }
+        .convai-container {
+            max-width: 600px;
+            margin: 4rem auto 0 auto;
+            background: rgba(34,34,34,0.98);
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(57,48,83,0.18);
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2rem;
+            font-family: 'Unbounded', 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #FF6B6B 10%, #3a7afe 60%, #00e6d0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2.2rem;
+        }
+    </style>
+    <!-- Convai Web SDK -->
+    <script src="https://cdn.convai.com/websdk/convai-web-sdk-latest.js" defer></script>
+</head>
+<body>
+    <div class="convai-container">
+        <h1>Convai AI Web Demo</h1>
+        <!-- Convai Web Plugin Mount Point -->
+        <div id="convai-web-sdk-root"></div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        function mountConvai() {
+          if (window.ConvaiWebSDK) {
+            ConvaiWebSDK.mount({
+              root: document.getElementById('convai-web-sdk-root'),
+              apiKey: 'd54f2f8098316cda800c6f4fc544135a',
+              characterId: '9c711552-405d-11f0-adee-42010a7be01f'
+            });
+          } else {
+            setTimeout(mountConvai, 100);
+          }
+        }
+        mountConvai();
+      });
+    </script>
+</body>
+</html>
