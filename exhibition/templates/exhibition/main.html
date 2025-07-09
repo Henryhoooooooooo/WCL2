@@ -168,7 +168,7 @@
             var isAuthenticated = "{{ user.is_authenticated|yesno:'true,false' }}";
             btn.onclick = function() {
                 if (isAuthenticated === 'true') {
-                    window.location.href = '/showroom/';
+                    window.location.href = '/playcanvas/';
                 } else {
                     modal.style.display = 'block';
                 }

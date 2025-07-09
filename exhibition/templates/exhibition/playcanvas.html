@@ -52,9 +52,15 @@
 </head>
 <body>
     <div class="pc-container">
-        <h1>PlayCanvas 虛擬展廳</h1>
+        <h1>Virtual Exhibition</h1>
+        <button id="ai-btn" style="margin-bottom:1.5rem;display:block;margin-left:auto;margin-right:auto;padding:0.7rem 2.2rem;font-size:1.1rem;font-family:'Unbounded','Montserrat',sans-serif;font-weight:600;border-radius:10px;border:none;background:linear-gradient(90deg,#3a7afe 30%,#00e6d0 100%);color:#fff;cursor:pointer;box-shadow:0 2px 12px rgba(58,122,254,0.10);transition:background 0.2s;">Avatar</button>
         <!-- 替換下方 src 為你的 PlayCanvas WebGL 項目鏈接 -->
         <iframe class="pc-iframe" src="/static/playcanvas/index.html" allowfullscreen title="PlayCanvas WebGL 展廳"></iframe>
+        <script>
+        document.getElementById('ai-btn').onclick = function() {
+            window.location.href = '/showroom/'; // 跳轉到 showroom
+        };
+        </script>
     </div>
 </body>
 </html>
